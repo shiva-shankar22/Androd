@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="126dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/snippet"
+        android:text="Svec Student Registraton"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter name"
+        android:textColor="@color/black"
+        android:id="@+id/sname"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clgname"
+        android:hint="enter clg name"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stdmail"
+        android:hint="enter student email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        />
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:hint="Enter Number"
+        android:id="@+id/stdnumber"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:drawableRight="@drawable/ic_baseline_phone_iphone_24"
+        android:maxLength="10"
+        />
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pcode"
+        android:maxLength="6"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_baseline_my_location_24"
+        android:layout_margin="10dp"
+        android:hint="enter pincode"
+        />
+       <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/stdvlg"
+       android:inputType="text"
+       android:layout_margin="10dp"
+       android:hint="enter village name"
+       android:drawableRight="@drawable/ic_baseline_home_24"
+       />
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+       <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/male"
+            android:layout_margin="10dp"
+            android:text="Male"/>
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:layout_margin="10dp"
+            android:text="Female"
+            />
+
+         </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+     <Spinner
+         android:id="@+id/sp_branches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:entries="@array/branches"
+        />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="District"
+          android:layout_margin="10dp"
+          android:textSize="20dp"
+          />
+    <Spinner
+        android:id="@+id/sp_districts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/districts"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:text="Select year of Study"
+        />
+    <Spinner
+        android:entries="@array/yearOfStudy"
+        android:id="@+id/stdyears"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Languages Know"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telugu"
+            android:id="@+id/ch_tel"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/ch_eng"
+            />
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:id="@+id/ch_hin"
+        />
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd1"
+        android:inputType="textPassword"
+        android:minLines="8"
+        android:layout_margin="10dp"
+        android:hint="enter password"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd2"
+        android:layout_margin="10dp"
+        android:hint="confirm password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="submit"
+       android:layout_margin="10dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="res"
+        android:gravity="center"
+        android:id="@+id/resText" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">StudentRegForm</string>
+    <array name="branches">
+        <item>Choose branch</item>
+        <item>Cse</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>Civil</item>
+        <item>IT</item>
+        <item>EEE</item>
+
+    </array>
+    <array name="districts">
+        <item>choose Districts</item>
+        <item>Adilabad</item>
+        <item>RangaReddy</item>
+        <item>Medhak</item>
+        <item>KareemNagar</item>
+        <item>Khammam</item>
+        <item>Warangal</item>
+        <item>Nalgonda</item>
+        <item>MahaboobNagar</item>
+    </array>
+    <array name="yearOfStudy">
+        <item>choose year</item>
+        <item>1st year</item>
+        <item>2nd year</item>
+        <item>3rd year</item>
+        <item>4th year</item>
+    </array>
+</resources>
